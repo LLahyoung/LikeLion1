@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* body 태그와 html태그의 padding과 margin을 0으로 초기화 */
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            font-size:0.8em;
+            text-align: center; /*내용물 가운데정렬*/
+        }
+        .header {
+            margin-bottom: 2em;
+        }
+        #scotty {
+            border-radius: 1em;
+        }
+        .container {
+            background-color: skyblue;
+            color: black;
+        }
+
+        .main-contents {
+            padding: 1em; /* padding은 박스와 그 안에 있는 내용물 사이의 간격이다 */
+            margin: 0 15vw 0 15vw;
+            font-size:0.8em;
+        }
+        
+        .footprint {/* 앞에 .이 붙으면 해당 선택자는 class라는 의미이다  */
+            margin: 0 15vw 0 15vw;
+            padding-bottom: 3em;
+        }
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #footer {/* 앞에 #이 붙으면 id라는 의미이다. */
+            border-top: skyblue solid 1px;
+            text-align: center;
+            padding: 1em;
+            margin-bottom: 1em;
+            max-height: 0.5em;
+            font-size: 0.7em;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <title>자기소개페이지</title>
+</head>
+<body>
+    <div class="navbar" style="background-color:skyblue;color:white;padding:0.5em"><a>Profile</a> | <a>HelloWorld</a> | <a>Word counter</a> | <a href="http://www.naver.com">네이버</a></div>
+
+    <div class="header" style="text-align:center">
+        <h1>안녕하세요, 제 이름은 구아영입니다</h1><!--h1,h2..-->
+        <img src="./imgs/사진2.jpeg"  id="scotty" width="200px"> <!--alt="트레비스스캇"-->
+    </div>
+
+
+    <div class="container">
+        <div class="main-contents">
+            <h2>자기소개</h2>
+            
+            <p>안녕하세요, 반갑습니다. 제 이름은 구아영입니다. </p>
+            <h2>나의 웹 (혹은 IT) 서비스 아이디어</h2>
+            
+            
+            <p>선택 장애가 있는 친구들에게 랜덤으로 매일매일 하나의 식당을 소개해주는 서비스를 생각해보았습니다.
+                이 웹서비스를 통해 소비자로서는 선택의 폭을 좁혀주어 좋고, 공급자로서는 또 하나의 홍보 수단이 될 수 있을 것 같습니다.
+                웹사이트를 통해 가게를 방문하면 음료를 무료로 증정해주는 이벤트나, 사이트에 등록된 가게의 쿠폰을 통합하는 것과 같은 방법을 이용해 홍보한다면 좀 더 많은 학생들이 웹서비스를 사용할 것이라고 생각합니다.
+                나중에 웹 이용자가 많아진다면 하나의 게시판을 만들어 실시간으로 각 가게의 남은 자릿수를 알려주는 서비스도 함께 구축하고 싶습니다. 
+                이를 통해. 이처럼 단국대학교 학생들의 삶을 더 편리하게 만들고, 더 나아가 학교 앞 상점들 역시 활성화시킬 수 있는 이 서비스를 만들고 싶습니다.</p>
+        </div>
+    </div>
+
+
+    <div class="footprint">
+        <h2>방명록</h2>
+        <form action="">
+            이름 <input type="text">
+            비밀번호 <input type="password">
+            <br><br>
+            <textarea name="footprint" id="footprint"rows="10"></textarea>
+            <input type="submit" value="제출하기" style="float:right;">
+        </form>
+    </div>
+    <div id="footer" style="text-align:center;">
+        DKU_LIKELION
+    </div>
+</body>
+</html>
